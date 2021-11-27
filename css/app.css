@@ -46,7 +46,7 @@ p {
 
 /*** Header Styling ***/
 .page-header {
-    background-image: url('../img/headerimage.jpg');
+    background-image: url('../img/banner.jpg');
     background-position: 50% 75%;
     background-size: cover;
     text-align: center;
@@ -60,17 +60,8 @@ h1 {
     position: relative;
     text-transform: uppercase;
     text-shadow: 0 0 1px white;
+    color: #fafbfc;
 }
-
-h1::after {
-    border: 5px solid #02ccba;
-    border-radius: 50%;
-    content: '';
-    height: 15px;
-    width: 15px;
-    position: absolute;
-}
-
 
 /*** Article Styling ***/
 article,
@@ -81,7 +72,7 @@ aside {
 article header {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 time {
