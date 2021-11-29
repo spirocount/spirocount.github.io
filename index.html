@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Blog Project</title>
+    <title>Welcome Spirocount</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans">
@@ -19,97 +19,92 @@
         <main>
             <article>
                 <header>
-                    <h2>Spirocount app</h2>
+                    <h3>The App Concept</h3>
                 </header>
                 <img src="img/image_1.PNG" alt="App windows">
 
-                <p>Spirocount is a proof of concept demonstration for using deep learning to count the number of spirochetes present in an image.</p>
+                <p>Spirocount is a proof-of-concept demonstration for using deep learning to count the number of spirochetes present in an image. The demonstration android app allows users loads or capture images and quickly detect spirochete objects within the sample image. Please visit our app code repository for usage and attribution information. Information about the training object detection model is available in our model training repository. </p>
 
             </article>
 
             <article>
                 <header>
-                    <h2>Spirochetes</h2>
+                    <h3>Object Detection and Microscopy</h3>
                 </header>
-                <img src="img/image_2.PNG" alt="Spirochetes">
+                <img src="img/image_5.PNG" alt="Spirochetes">
 
-                <p>Spirocount's efficientdet2 model is trained to detect spirochetes. Spirochetes are a phylum of bacteria which are characterized by its spiral shaped morphology. Many varieties of spirochetes exist in nature. A few notable genera of spirochetes Borreliella, Treponema, and Leptospira contain species that cause diseases in human including Lyme disease, Sphylis, and Leptospirosis. </p>
+                <p>Using machine vision to identify and count living cell under the microscopy is not new and has a wide field of use cases. Machine vision is already in use to identify of cancers and infectious diseases. Machine vision a can also be used to count bacterial colonies and eukaryotic cells under the microscope. Machine vision is also used to make measurements of neuronal cell cultures. Yet, there are not any machine vision approaches yet that go far enough to count spirochete bacteria in an easily accessible way. The wide applicability to biomedical science motivated me to use this opportunity to learn approaches in machine vision and develop a demonstration project.  </p>
 
             </article>
 
             <article>
                 <header>
-                    <h2>Counting Spirochetes</h2>
+                    <h3>What are Spirochetes?</h3>
                 </header>
-                <img src="img/image_3.PNG" alt="growth curve">
+                <img src="img/image_2.PNG" alt="growth curve">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.</p>
-
-            </article>
-
-            <article>
-                <header>
-                    <h3>Automation</h3>
-                </header>
-
-                <img src="img/image_4.PNG" alt="experiment">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.</p>
+                <p>The Spirocount app is trained to detect Spirochetes. Spirochetes are a phylum of bacteria which are characterized by its spiral shaped morphology. Many varieties of Spirochetes exist in nature. A few notable genera of Spirochetes Borreliella, Treponema, and Leptospira contain species that cause diseases in human. Human disease cause by Spirochete bacteria include Lyme disease, Syphilis, and Leptospirosis.</p>
 
             </article>
 
             <article>
                 <header>
-                    <h3>Spirochete detection</h3>
+                    <h3>Why Counting?</h3>
                 </header>
 
-                <img src="img/image_5.PNG" alt="spirochete detection">
+                <img src="img/image_3.PNG" alt="experiment">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.</p>
+                <p>Spirocount was conceived to address the spirochete enumeration problem. Spirochetes can grow slowly and reach low densities in laboratory cultures. The low density of Spirochetes in cultures require researchers to manually count spirochetes of each culture under the microscope. This is a problem because manually handling culture, setting up microscopy slides, and counting for each culture can be quite time consuming. This type of work is often automated for studying other organisms that grow dense enough to be measured in other ways.</p>
 
             </article>
 
             <article>
                 <header>
-                    <h3>Tensorflow-lite</h3>
+                    <h3>A Motivating Problem </h3>
+                </header>
+
+                <img src="img/image_4.PNG" alt="spirochete detection">
+
+                <p>An experiment to compare growths of strains and conditions can take a lot of time if done completely manually. Spirochetes are counted under the microscope in up to 8 visual fields per sample slide. Typically replicate 3 or more sample cultures are examined to address variability and reproducibility concerns. When comparing strains of bacteria, the comparison is done concurrently to control for variability in culture medium, handling, and other environmental variables. Addressing these requirements, an experiment with 3 strains, 2 different conditions, 3 sample replicates, and 8 field views per sample examination will require 144 individuals to be examined at each point in time. In later stages of these experiments each visual field contain many spirochetes, and it is easy to spend 20 – 30 seconds counting and recording each field. The relative effort required to examine spirochete samples for a relatively small experiment like this makes it expensive to expand strain or conditions to test, or to continuously conduct experiments that closely examines spirochete growth and morphology in response to many variables. This sort of problem exists in many areas of microbiology that requires enumeration or characterization by microbiology. Microscopy has been remained the same for many decades and has been slow to become automated because of the complexity machine vision-based approaches. </p>
+
+            </article>
+
+            <article>
+                <header>
+                    <h3>Please Contact Us</h3>
                 </header>
 
                 <img src="img/image_6.PNG" alt="training images">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.</p>
+                <p>The Spirocount app is a proof-of-concept project to apply a convolutional neural network approach to identify and enumerate spirochetes in an image from a microscope. We trained the efficientdet model with about 170 spirochete images using the TensroFlow code library. However, the object detection model used in this demonstration can be improved further with more images. We are also exploring adapting this to new uses such as live imaging and connected devices. Feel free to contact us if you are interested in any of these applications or would like to collaborate!</p>
 
             </article>
         </main>
 
         <aside>
-            <img src="img/profilepic.jpg" alt="My profile picture">
 
             <div class="sidebar-text">
-                <h2>About the Contributors</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus delectus esse repellendus. Harum esse laudantium itaque, aut cum molestias magni voluptatum veritatis alias. Veniam, impedit fuga ab saepe repudiandae.</p>
+                <h2>Contributors</h2>
+                <img src="img/profilepic_Bill.jpg" alt="Bill Boyle">
+                <h3><p> Bill Boyle </p></h3>
+                <p>Bill is a microbiologist with spirochete research experience and currently working on a volunteer basis. </p>
 
                 <section>
-                    <h3 class="visuallyhidden">Social Links</h3>
-                    <a class="social-link" href="https://twitter.com/udacity">
-                        <img src="img/social-twitter.png" alt="Twitter">
-                    </a>
-                    <a class="social-link" href="https://www.instagram.com/udacity/">
-                        <img src="img/social-instagram.png" alt="Instagram">
-                    </a>
-                    <a class="social-link" href="https://plus.google.com/+Udacity">
-                        <img src="img/social-google.png" alt="Google Plus">
-                    </a>
-                </section>
 
+                <img src="img/profilepic_Nick.jpg" alt="Nick Ewing">
+                <h3><p> Nick Ewing </p></h3>
+                <p>Nick is a talented and capable software developer who has graciously volunteered his time to this project. </p>
+
+                <section>
             </div>
+
+
             <div class="sidebar-text">
                 <h2>Github repsitories</h2>
-                <p><a class="social-link" href="https://twitter.com/udacity">Tensorflow Model training</a></p>
-                <p><a class="social-link" href="https://twitter.com/udacity">Demonstration app</a></p>
-
-                </section>
-            </div>
-
+                <p><a class="social-link" href="https://github.com/spirocount/spirochete_vision">Tensorflow Model Training</a></p>
+               <p><a class="social-link" href="https://github.com/spirocount/spirocount">Demonstration App </a></p>
+              </section>
+           </div>
         </aside>
     </div>
 
