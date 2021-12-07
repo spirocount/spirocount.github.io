@@ -84,6 +84,14 @@ article img {
     width: 100%;
 }
 
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .read-more {
     color: #02ccba;
     font-family: 'Open Sans', sans-serif;
