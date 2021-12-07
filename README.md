@@ -1,2 +1,1 @@
-# spirocount.github.io
-github pages
+# visit https://spirocount.github.io/
